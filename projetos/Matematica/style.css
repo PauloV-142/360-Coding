@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    /*font-family: "Playfair Display", serif;*/
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size:x-large;
+}
+header {
+    width: 100vw;
+    height: 12vh;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.colors {
+    color: #ff9f1c;
+    color: #ffbf69;
+    color: #ffffff;
+    color: #cbf3f0;
+    color: #2ec4B6;
+}
+/* background colors */
+.blue {
+    background-color: #2EC4B6;
+}
+.ligthblue {
+    background-color: #CBF3F0;
+}
+.ligthorange {
+    background-color: #ffbf69;
+}
+.orange {
+    background-color: #ff9f1c;
+}
+/* text colors */
+.text-black{
+    color: black;
+}
+.text-ligthgray{
+    color: #212529;
+}
+.text-white{
+    color: #ffffff
+}
+.text-blue{
+    color:#2ec4B6;
+}
+/* shadow colors */
+.shadow-ligthblue {
+    text-shadow: 1.5px 1.5px 0px #cbf3f0;
+}
+/* width % */
+.w-95 {
+    width: 95%;
+}
+.w-5 {
+    width: 5%;
+}
+/*Text-ish*/
+.decorationless {
+    text-decoration: none;
+}
+
+.link-default:hover {
+    text-shadow: -1.5px -1.5px 1.5px #000000;
+}
+/*Tooltip*/
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
